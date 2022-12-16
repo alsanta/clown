@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
 
         h1 {
-            font-size: 2rem;
+            font-size: 1rem;
             font-weight: 600;
         }
 

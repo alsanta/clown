@@ -1,6 +1,5 @@
 import React from 'react';
 
-import vertClown from '../../images/vertClown2.jpg'
 
 import { Wrapper} from './Home.styles';
 

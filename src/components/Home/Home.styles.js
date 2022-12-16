@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-import vertClown from '../../images/vertClown2.jpg'
+import horiClown from '../../images/clownbg.jpg'
+import vertClown from '../../images/clownbg4.jpg'
 
 export const Wrapper = styled.div`
     background-color: teal;
@@ -11,4 +12,8 @@ export const Wrapper = styled.div`
     overflow: hidden;
     background-image: url(${vertClown});
     background-size: cover;
+
+    @media screen and (min-width:450px){
+        background-image: url(${horiClown})
+    }
 `
