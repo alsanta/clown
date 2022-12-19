@@ -4,7 +4,6 @@ import horiClown from '../../images/clownbg.jpg'
 import vertClown from '../../images/clownbg4.jpg'
 
 export const Wrapper = styled.div`
-    background-color: teal;
     min-width:100vw;
     min-height: 100vh;
     max-width: 100vw;

@@ -10,6 +10,7 @@ import {
 // Components
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Venue from './components/Venue';
 
 // Styles
 import { GlobalStyle } from './GlobalStyles';
@@ -22,8 +23,8 @@ function App() {
       <Route path='/About'/>
       <Route path='/Artwork'/>
       <Route path='/ShowRoom'/>
-      <Route path='ShortFilm'/>
-      <Route path='Venue'/>
+      <Route path='/ShortFilm'/>
+      <Route path='/Venue' element={<Venue/>}/>
     </Routes>
       <Footer />
       <GlobalStyle/>

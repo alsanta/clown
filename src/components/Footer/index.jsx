@@ -22,19 +22,19 @@ const Footer = () => {
                         <LogoImg src={logo} alt='logo' />
                     </StyledLink>
                     <StyledLink to='/About'>
-                        <h1>About</h1>
+                        <p>About</p>
                     </StyledLink>
                     <StyledLink to='/Artwork'>
-                        <h1>Artwork</h1>
+                        <p>Artwork</p>
                     </StyledLink>
                     <StyledLink to='/ShowRoom'>
-                        <h1>Show Room</h1>
+                        <p>Show Room</p>
                     </StyledLink>
                     <StyledLink to='/ShortFilm'>
-                        <h1>Short Film</h1>
+                        <p>Short Film</p>
                     </StyledLink>
                     <StyledLink to='/Venue'>
-                        <h1>Venue</h1>
+                        <p>Venue</p>
                     </StyledLink>
                 </Content>
             </MediaQuery>
@@ -43,28 +43,28 @@ const Footer = () => {
                     <DropDownLi>
                         <Dropbtn onClick={()=> clickHandler()}>
                             {/* <img src={logo} style={{height: 50, }} alt="logo" /> */}
-                            <h1>Menu</h1>
+                            <p>Menu</p>
                         </Dropbtn>
                         {isShown?
                         <DropDownContent>
                             {" "}
                             <StyledLink onClick={()=> clickHandler()} to='/'>
-                                <h1>Home</h1>
+                                <p>Home</p>
                             </StyledLink>
                             <StyledLink onClick={()=> clickHandler()} to='/About'>
-                                <h1>About</h1>
+                                <p>About</p>
                             </StyledLink>
                             <StyledLink onClick={()=> clickHandler()} to='/Artwork'>
-                                <h1>Artwork</h1>
+                                <p>Artwork</p>
                             </StyledLink>
                             <StyledLink onClick={()=> clickHandler()} to='/ShowRoom'>
-                                <h1>Show Room</h1>
+                                <p>Show Room</p>
                             </StyledLink>
                             <StyledLink onClick={()=> clickHandler()} to='/ShortFilm'>
-                                <h1>Short Film</h1>
+                                <p>Short Film</p>
                             </StyledLink>
                             <StyledLink onClick={()=> clickHandler()} to='/Venue'>
-                                <h1>Venue</h1>
+                                <p>Venue</p>
                             </StyledLink>
                         </DropDownContent>
                         :<div/>}
