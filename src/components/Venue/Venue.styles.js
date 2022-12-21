@@ -33,17 +33,15 @@ export const Container = styled.div`
 `
 export const MapWrap = styled.div`
     border: 2px dotted red;
-    min-width:80%;
-    max-width:80vh;
+    width:100%;
+    max-width:100%;
     max-height:80vh;
-    margin-top:50px;
-    margin-left:50px;
+    margin: 50px 20px 0px 50px;
 
     @media screen and (max-width:450px){
-        max-width: 350px;
+        max-width: 400px;
         max-height: 100vh;
         min-height: 40vh;
         margin-left:20px;
-        margin-bottom:10px;
     }
 `

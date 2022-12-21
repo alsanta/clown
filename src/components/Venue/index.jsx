@@ -1,20 +1,18 @@
 import React from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, useLoadScript, MarkerF } from '@react-google-maps/api';
 
 import { Wrapper, Container, MapWrap } from './Venue.styles';
 
 
 const Venue = (props) => {
-    const API_KEY = process.env.REACT_APP_API_KEY;
+    const { isLoaded, loadError } = useLoadScript({
+        googleMapsApiKey: process.env.REACT_APP_API_KEY
+    })
 
     const location = {
         lat: 26.00166,
         lng: -80.15049
     };
-
-    const onLoad = marker => {
-        console.log('marker: ', marker)
-    }
 
     const containerStyle = {
         width: '100%',
@@ -31,20 +29,11 @@ const Venue = (props) => {
                 <p> Independent art gallery where artists can gather, create, brainstorm, collaborate, and showcase their crafts and art pieces. The goal of Casa Museo is to expand the artistic scene in Hollywood.</p>
             </Container>
             <MapWrap>
-                <LoadScript
-                    googleMapsApiKey= {API_KEY} >
-                    <GoogleMap
-                        mapContainerStyle={containerStyle}
-                        center={location}
-                        zoom={12}
-                    >
-                        <Marker
-                            onLoad={onLoad}
-                            position={location}
-                            label="Case Museo"
-                        />
-                    </GoogleMap>
-                </LoadScript>
+                {isLoaded?
+                <GoogleMap mapContainerStyle={containerStyle} center={location} zoom={15}>
+                    <MarkerF position={location} label="Casa Museo"/>
+                </GoogleMap>
+                :<div> Error {console.log(loadError)}</div>}
             </MapWrap>
         </Wrapper>
     )
