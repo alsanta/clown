@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import MediaQuery from 'react-responsive'
 
 // Img
-import logo from '../../images/logo.png';
+import logo from '../../images/Carita2.jpg';
 
 // Styles
 import { Wrapper, Content, LogoImg, StyledLink, Dropbtn, DropDownContent, DropDownLi} from './Footer.styles';
